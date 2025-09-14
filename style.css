@@ -251,3 +251,8 @@ div .servises-box:hover{
   border: 1px solid #ffffff;
   padding-bottom: 5rem;
 }
+
+.portfoliyo-box img{
+  height: 15rem;
+}
+
