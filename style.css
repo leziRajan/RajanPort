@@ -17,11 +17,11 @@ section{
 
 #menu-icon{
     font-size: 3.6rem;
-    color: black;
+    color: #000000;
 }
 
 #menu-icon:hover{
-    color: white;
+    color: #ffffff;
 }
 
 nav {
@@ -32,6 +32,7 @@ nav {
   align-items: center;
   padding: 0 60px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: #fffdfd;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -65,7 +66,7 @@ nav {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #ffffff; 
+  color: #6e26ff; 
 }
 
 .btn {
@@ -252,22 +253,26 @@ div .servises-box:hover{
   padding-bottom: 5rem;
 }
 
-.portfoliyo-box img{
+.Projects-box img{
   width: 100%;
 }
 
-.portfoliyo h2{
+.Projects-box:hover img{
+  transform: scale(1.1);
+}
+
+.Projects h2{
   margin-bottom: 4rem;
 }
 
-.portfoliyo-container{
+.Projects-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
 
-.portfoliyo-container .portfoliyo-box{
+.Projects-container .Projects-box{
   position: relative;
   border-radius: 2rem;
   box-shadow: 0, 0 ,1rem #000000;
@@ -275,7 +280,7 @@ div .servises-box:hover{
   display: flex;
 }
 
-.portfoliyo-box .portfoliyo-layer{
+.Projects-box .Projects-layer{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -288,20 +293,27 @@ div .servises-box:hover{
   flex-direction: column;
   text-align: center;
   padding: 0 4rem;
+  transform: translateY(100%);
+  transition: .5s ease;
 }
 
-.portfoliyo-layer h4{
+.Projects-box:hover .portfoliyo-layer{
+  transform: translateY(0);
+}
+
+
+.Projects-layer h4{
   font-size: 3rem;
   color: #ffffff;
 }
 
-.portfoliyo-layer p{
+.Projects-layer p{
   font-size: 1.6rem;
   margin: .3rem 0 1rem;
   color: #ffffff;
 }
 
-.portfoliyo-layer a{
+.Projects-layer a{
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -311,10 +323,77 @@ div .servises-box:hover{
   border-radius: 50%;
 }
 
-.portfoliyo-layer a i{
+.Projects-layer a i{
   color: #ffffff;
 }
 
-.portfoliyo-layer i{
-  color: #ffffff;
+.contact h2{
+  margin-bottom: 3rem;
+}
+
+.contact form{
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input, 
+.contact form textarea{
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #000000;
+  border-radius: .8rem;
+  margin: .7rem 0;
+}
+
+.contact form .input-box input{
+  width: 49%;
+}
+
+.contact form textarea{
+  resize: none;
+}
+
+.contact form .btn{
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: #ffffff;
+}
+
+.footer-text p{
+font-size: 1.6rem;
+}
+
+.footer-icontop a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background: #6e26ff;
+  border-radius: 20px;
+}
+
+.footer-icontop a:hover{
+  box-shadow: 0 0 1rem #000000;
+}
+
+.footer-icontop a i {
+  font-size: 2.4rem;
+   color: #ffffff;
 }
