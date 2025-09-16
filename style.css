@@ -39,10 +39,10 @@ nav {
 }
 
 
-.logo {
+div .logo {
   font-size: 24px;
   font-weight: 700;
-  color: #fffdfd;
+  color: #000000;
 }
 
 
@@ -107,6 +107,20 @@ nav {
 
 .home-image img{
   width: 30vw;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+
+@keyframes floatImage{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-2.4rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
 .home-content p{
@@ -166,6 +180,20 @@ span{
 
 .about-img{
   width: 30vw;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+
+@keyframes floatImage{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-2.4rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
 .about-img img{
@@ -297,7 +325,7 @@ div .servises-box:hover{
   transition: .5s ease;
 }
 
-.Projects-box:hover .portfoliyo-layer{
+.Projects-box:hover .Projects-layer{
   transform: translateY(0);
 }
 
@@ -356,6 +384,7 @@ div .servises-box:hover{
 
 .contact form .input-box input{
   width: 49%;
+  margin-left: .6rem;
 }
 
 .contact form textarea{
@@ -369,15 +398,16 @@ div .servises-box:hover{
 
 .footer {
   display: flex;
+  height: 70px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2rem 9%;
   background: #ffffff;
 }
 
 .footer-text p{
 font-size: 1.6rem;
+margin-left: 20px;
 }
 
 .footer-icontop a{
